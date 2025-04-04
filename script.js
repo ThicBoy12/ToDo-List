@@ -41,6 +41,8 @@ function addItem(){
 
   txtInput.value = '';
   txtInput.focus();
+
+  todolist.scrollTop = todolist.scrollHeight;
 }
 
 function deleteAll(){
