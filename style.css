@@ -1,0 +1,161 @@
+@font-face{
+  font-family: myFont;
+  src: url(KOMIKAX_.ttf);
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, rgb(255, 80, 80), rgb(255, 160, 160), rgb(255, 200, 100));
+  font-family: 'Poppins', sans-serif;
+}
+
+#box{
+  background-color: white;
+  width: 800px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 100px;
+  max-height: 800px;
+  min-width: 300px;
+}
+
+#header{
+  font-family: myFont;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 120);
+}
+
+input{
+  border: none;
+  background-color: rgb(230, 230, 230);
+  border-radius: 24px;
+  color: gray;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+input:focus{
+  outline: none;
+}
+
+#add-button{
+  color: white;
+  background-color: rgb(255, 130, 47);
+  border: none;
+  padding: 16px 36px;
+  border-radius: 24px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#add-button:active{
+  transform:scale(0.9);
+}
+
+#input-bar-container{
+  position: relative;
+  margin-bottom: 20px;
+} 
+
+#todolist{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.todolist-item{
+  background-color: red;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todolist-item:hover{
+  background-color: rgb(230, 230, 230);
+}
+
+#todolist::-webkit-scrollbar {
+  width: 8px;
+}
+
+#todolist::-webkit-scrollbar-thumb {
+  background-color: darkgray;
+  border-radius: 10px;
+}
+
+.del-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.3s;
+  min-width: 30px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.del-button:hover{
+  background-color: white;
+}
+
+.check{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  min-width: 30px;
+  margin-right: 10px;
+}
+
+.txt{
+  cursor: pointer;
+  word-break: break-word;
+  margin: 0;
+}
+
+#header-line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#delete-all{
+  color: white;
+  background-color: darkgray;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#delete-all:active{
+  transform: scale(0.9);
+}
